@@ -84,7 +84,7 @@ export function handleItemListed(event: ItemListedEvent): void {
   itemListed.tokenId = event.params.tokenId;
   activeItem.tokenId = event.params.tokenId;
 
-  itemListed.price = event.params.tokenId;
+  itemListed.price = event.params.price;
   activeItem.price = event.params.price;
 
   activeItem.buyer = Address.fromString(
